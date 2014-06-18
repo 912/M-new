@@ -1,0 +1,9 @@
+{% if latest_book_list %}
+    <ul>
+    {% for book in latest_book_list %}
+        <li><a href="/anthologies/{{ question.id }}/">{{ book.book_text }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No anthologies are available.</p>
+{% endif %}
